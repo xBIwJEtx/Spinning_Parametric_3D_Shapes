@@ -13,3 +13,4 @@ Simulation of Parametric 3D Shapes in ASCII
 - **Mobius Strip** → มี parameter คือ u และ v
 - **Klein Bottle** → มี parameter คือ u และ v
 - **Trefoil Knot** → มี parameter คือ u และ t
+- **Heart** → มี parameter คือ u และ t
