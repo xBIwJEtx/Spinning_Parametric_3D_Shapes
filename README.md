@@ -14,3 +14,4 @@ Simulation of Parametric 3D Shapes in ASCII
 - **Klein Bottle** → มี parameter คือ u และ v
 - **Trefoil Knot** → มี parameter คือ u และ t
 - **Heart** → มี parameter คือ u และ t
+- **Enneper Surface** → มี parameter คือ u และ v
