@@ -15,3 +15,4 @@ Simulation of Parametric 3D Shapes in ASCII
 - **Trefoil Knot** → มี parameter คือ u และ t
 - **Heart** → มี parameter คือ u และ t
 - **Enneper Surface** → มี parameter คือ u และ v
+- **Boy's Surface** → มี parameter คือ u และ v
