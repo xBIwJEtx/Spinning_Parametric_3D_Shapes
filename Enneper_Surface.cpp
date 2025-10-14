@@ -6,8 +6,8 @@ const int width = 120, height = 44;
 float zBuffer[width * height];
 char buffer[width * height];
 int backgroundASCIICode = ' ';
-int distanceFromCam = 120;
-float K1 = 10;
+int distanceFromCam = 15;
+float K1 = 60;
 float x, y, z;
 float ooz;
 int xp, yp;
@@ -42,7 +42,7 @@ void calculate(float i, float j){
         if(ooz > zBuffer[idx]){
             zBuffer[idx] = ooz;
 
-            int shade_index = std::min(10, std::max(0, int(ooz * 12)));
+            int shade_index = std::min(10, std::max(0, int(ooz * 20)));
             buffer[idx] = shades[shade_index];
         }
     }
@@ -55,8 +55,8 @@ int main(){
         memset(buffer, backgroundASCIICode, width * height);
         memset(zBuffer, 0, width * height * 4);
 
-        for(U = 0; U <= 6.28; U += 0.05){
-            for(V = 0; V <= 6.28; V += 0.05){
+        for(U = -1.5; U <= 1.5; U += 0.05){
+            for(V = -1.5; V <= 1.5; V += 0.05){
                 calculate(U, V);
             }
         }
