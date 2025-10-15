@@ -41,7 +41,6 @@ void calculate(float i, float j){
     if(idx >= 0 && idx < width * height){
         if(ooz > zBuffer[idx]){
             zBuffer[idx] = ooz;
-
             int shade_index = std::min(10, std::max(0, int(ooz * 40) % 12));
             buffer[idx] = shades[shade_index];
         }
@@ -69,4 +68,5 @@ int main(){
         C += 0.01;
         usleep(8000);
     }
+
 }
